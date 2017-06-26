@@ -9,5 +9,6 @@ install perl<br>
 Install Shell scripts<br>
 Configure Crontab to start scripts.<br>
 The CSV file format  date, time, Hz low, Hz high, Hz step, samples, dbm, dbm, ...<br>
+Problems (Imige rejection nessary 14 Mhz low and high pass filter)
 Block Diagram<br>
 ![Alt text](HF_Noise_Monitor.png?raw=true "Monitoring system Block diagram")<br>
