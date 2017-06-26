@@ -6,3 +6,5 @@ Install rtl_power utility<br>
 Install rrdtool<br>
 install heatmap.sh<br>
 install perl<br>
+Install Shell scripts<br>
+Configure Crontab to start scripts.<br>
