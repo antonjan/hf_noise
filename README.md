@@ -8,3 +8,4 @@ install heatmap.sh<br>
 install perl<br>
 Install Shell scripts<br>
 Configure Crontab to start scripts.<br>
+The CSV file format  date, time, Hz low, Hz high, Hz step, samples, dbm, dbm, ...<br>
