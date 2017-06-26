@@ -5,7 +5,7 @@ use warnings;
 use Text::CSV;
 my $csv = Text::CSV->new({ sep_char => ',' });
 
-my $file = $ARGV[0] or die "Need to get CSV file on the command line\n";
+my $file = $ARGV[0] or die "Need to add CSV file path on the command line. usage ./import_csv_into_rrd.pl test.csv\n";
 
 my $sum = 0;
 open(my $data, '<', $file) or die "Could not open '$file' $!\n";
