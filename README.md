@@ -7,6 +7,7 @@ Install rrdtool<br>
 install heatmap.sh<br>
 install perl<br>
 Install Shell scripts<br>
+![Alt text](HF_Graph_monitoring.png?raw=true "HF RF power monitoring")<br>
 Configure Crontab to start scripts.<br>
 The CSV file format  date, time, Hz low, Hz high, Hz step, samples, dbm, dbm, ...<br>
 Problems (Imige rejection nessary 14 Mhz low and high pass filter)
