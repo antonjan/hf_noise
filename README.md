@@ -8,11 +8,11 @@ install heatmap.sh<br>
 install perl<br>
 Install Shell scripts<br>
 Install Apacahe SERVER<br>
-Install PHP
-Install rtl_SDR and librtl
-Install usbreset from here https://gist.github.com/x2q/5124616
-The usbport reset script reqiers this.
-File upload to Master Analytics site will be available when it goes alive.
+Install PHP<br>
+Install rtl_SDR and librtl<br>
+Install usbreset from here https://gist.github.com/x2q/5124616<br>
+The usbport reset script reqiers this.<br>
+File upload to Master Analytics site will be available when it goes alive.<br>
 ![Alt text](HF_Graph_monitoring.png?raw=true "HF RF power monitoring")<br>
 Configure Crontab to start scripts.<br>
 The CSV file format  date, time, Hz low, Hz high, Hz step, samples, dbm, dbm, ...<br>
