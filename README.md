@@ -12,7 +12,7 @@ Install PHP<br>
 Install rtl_SDR and librtl<br>
 Install usbreset from here https://gist.github.com/x2q/5124616<br>
 The usbport reset script requiers this.<br>
-#############################################
+#############################################<br>
 sudo apt-get install git<br>
 #Create user hfnoise<br>
 sudo adduser hfnoise<br>
@@ -66,10 +66,10 @@ perl -MCPAN -e 'install Test::Pod'<br>
 perl -MCPAN -e 'install Test::Pod::Coverage'<br>
 perl -MCPAN -e 'install RRD::Simple'<br>
 ######################################################<br>
-here is the crontab entries
+here is the crontab entries<br>
 ######################################################<br>
-0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/hfnoise/sh/create_heatmap.sh
-0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * * /home/hfnoise/sh/run_hf_noise_monitor_and_graph.sh
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/hfnoise/sh/create_heatmap.sh<br>
+0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * * /home/hfnoise<br>/sh/run_hf_noise_monitor_and_graph.sh<br>
 #######################################################<br>
 File upload to Master Analytics site will be available when it goes alive.<br>
 ![Alt text](HF_Graph_monitoring.png?raw=true "HF RF power monitoring")<br>
