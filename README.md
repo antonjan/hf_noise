@@ -65,7 +65,12 @@ perl -MCPAN -e 'install Test::Deep'<br>
 perl -MCPAN -e 'install Test::Pod'<br>
 perl -MCPAN -e 'install Test::Pod::Coverage'<br>
 perl -MCPAN -e 'install RRD::Simple'<br>
-
+######################################################<br>
+here is the crontab entries
+######################################################<br>
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/hfnoise/sh/create_heatmap.sh
+0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * * /home/hfnoise/sh/run_hf_noise_monitor_and_graph.sh
+#######################################################<br>
 File upload to Master Analytics site will be available when it goes alive.<br>
 ![Alt text](HF_Graph_monitoring.png?raw=true "HF RF power monitoring")<br>
 Configure Crontab to start scripts.<br>
