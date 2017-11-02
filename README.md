@@ -44,15 +44,30 @@ sudo cp -r /home/hfnoise/hf_noise/*.png ./<br>
 # now test if hfnoise webserver work.<br>
 firefox http://localhost/hf_noise.<br>
 #you should see the index page with no pictures.<br>
+#We now need to install the heatmap application.<br>
+#lets go to home directory and install heatmap<br>
+cd<br> 
+# got hf_noise directory and install heatmap by gett from github<br>
+cd hf_noise<br>
+<br>
+git clone https://github.com/keenerd/rtl-sdr-misc.git
+cd /home/hfnoise/hf_noise/rtl-sdr-misc/heatmap<br>
+chmod 776 *.py<br>
+<br> 
 #CPAN, the Comprehensive Perl Archive Network, is the primary source for publishing and fetching the latest modules <br>
-apt-get install perl build-essential curl<br>
-sudo apt-get install cpanminus<br>
-
-sudo apt-get install cpanminus<br>
+sudo apt-get install perl build-essential curl<br>
+sudo apt-get install rddtool<br>
+sudo apt-get install librrds-perl<br>
+cd /usr/local/bin<br> 
+sudo wget https://raw.github.com/miyagawa/cpanminus/master/cpanm<br>
+sudo chmod +x cpanm<br>
+cd<br>
+sudo cpanm --self-upgrade --sudo<br>
+#sudo apt-get install cpanminus<br>
 sudo cpanm Text::Trim<br>
 sudo cpanm  Text::CSV<br>
 sudo cpanm  Date::Manip<br>
-sudo cpanm Text::Trim qw(trim)<br>
+sudo cpanm Text::Trim qw(trim)<br># mite be only trim
 sudo cpanm RRD::Simple ()<br>
 #rrdtool update hf_noise.rrd ds-name:30Mhz_Power $recordtime:$rrdfields[29]\n";<br>
 echo "Creating rrd database configeration"<br>
