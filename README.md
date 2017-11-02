@@ -23,6 +23,17 @@ su - hfnoise<br>
 sudo apt-get update<br>
 sudo upgrade<br>
 sudo apt-get install git<br>
+sudo apt install cmake<br>
+sudo apt-get install libusb-1.0-0-dev<br>
+cd<br>
+git clone git://git.osmocom.org/rtl-sdr.git<br>
+cd rtl-sdr/<br>
+mkdir build<br>
+cd build<br>
+cmake ../<br>
+make<br>
+sudo make install<br>
+sudo ldconfig<br>
 ls<br>
 #pull the noise monitoring system from github<br>
 git clone https://github.com/antonjan/hf_noise.git<br>
@@ -67,8 +78,14 @@ sudo cpanm --self-upgrade --sudo<br>
 sudo cpanm Text::Trim<br>
 sudo cpanm  Text::CSV<br>
 sudo cpanm  Date::Manip<br>
-sudo cpanm Text::Trim qw(trim)<br># mite be only trim
-sudo cpanm RRD::Simple ()<br>
+sudo cpanm Text::Trim<br># mite be only trim
+sudo cpanm RRD::Simple<br>
+cd<br> 
+cd hf_noise<br>
+cd sh<br>
+#run then script to generate rrd db
+./create_rrd_db.sh<br>
+
 #rrdtool update hf_noise.rrd ds-name:30Mhz_Power $recordtime:$rrdfields[29]\n";<br>
 echo "Creating rrd database configeration"<br>
 
