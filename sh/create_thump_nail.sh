@@ -1,7 +1,7 @@
 #!/bin/bash
 #install this to use the following sudo apt-get install imagemagick
 #install apt-get install imageinfo
-for file in /var/www/hf_noise/images/*.png
+for file in /var/www/html/hf_noise/images/*.png
 do
   # next line checks the mime-type of the file
   IMAGE_TYPE=`file --mime-type -b "$file" | awk -F'/' '{print $1}'`
