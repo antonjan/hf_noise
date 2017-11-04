@@ -6,7 +6,6 @@ Install rtl_power utility<br>
 Install rrdtool<br>
 install heatmap.sh<br>
 install perl<br>
-Install Shell scripts<br>
 Install Apacahe SERVER<br>
 Install PHP<br>
 Install rtl_SDR and librtl<br>
@@ -25,8 +24,16 @@ sudo upgrade<br>
 sudo apt-get install git<br>
 sudo apt install cmake<br>
 sudo apt-get install libusb-1.0-0-dev<br>
+sudo apt install python-setuptools<br>
+sudo easy_install pip<br>
+sudo pip install image<br>
 cd<br>
-git clone git://git.osmocom.org/rtl-sdr.git<br>
+wget http://archive.ubuntu.com/ubuntu/pool/universe/i/imageinfo/imageinfo_0.04-0ubuntu11_amd64.deb<br>
+sudo dpkg -i ./mageinfo_0.04-0ubuntu11_amd64.deb<br>
+cd<br>
+#git clone git://git.osmocom.org/rtl-sdr.git<br>
+#Please make sure you use this repository as the osmond one dont suport direct convertion mode<br>
+git clone https://github.com/keenerd/rtl-sdr.git<br>
 cd rtl-sdr/<br>
 mkdir build<br>
 cd build<br>
@@ -35,6 +42,28 @@ make<br>
 sudo make install<br>
 sudo ldconfig<br>
 ls<br>
+sudo vi /etc/modprobe.d/no-rtl.conf<br>
+#add the following 
+blacklist dvb_usb_rtl28xxu<br>
+blacklist rtl2832<br>
+blacklist rtl2830<br>
+#reboot
+#we now need to install an aplication that will alow us to reset the USB port where the rtl dongle is installed if it locks up for some reason (this has ahppend when there is lightning in the aria.So what i do is motor if the csv file get updated if not I reset the usb port with this utility.<br>
+cd<br>
+git clone https://github.com/jkulesza/usbreset.git<br>
+cd usbreset<br>
+#lets compile the application<br>
+cc usbreset.c -o usbreset<br>
+#we now need to establish witch usb port is your rtl dongle installed.<br>
+sudo lsusb<br
+#we now need to edit the shel script that monitor the csv file update with your rtl usb port details.<br> 
+#now look for the device with this name "Realtek Semiconductor Corp. RTL2838 DVB-T" in my case it was "Bus 003 Device 004" to be like E.g sudo /home/hfnoise/usbreset/usbreset /dev/bus/usb/003/004<br>
+<br>
+cd
+cd hf_noise
+cd sh
+vi check_if_file_was_updated.sh
+# change the line that looks like this "sudo /home/anton/Downloads/usbreset/usbreset /dev/bus/usb/002/005" with your detail<br>
 #pull the noise monitoring system from github<br>
 git clone https://github.com/antonjan/hf_noise.git<br>
 #install Apache2 server<br>
@@ -47,7 +76,7 @@ sudo systemctl restart apache2<br>
 cd /var/www/html<br>
 sudo mkdir hf_noise<br>
 sudo mkdir hf_noise/graph<br>
-sudo mkdir hf_noise/image<br>
+sudo mkdir hf_noise/images<br>
 cd hf_noise/graph<br>
 sudo cp -r /home/hfnoise/hf_noise/*.php ./<br>
 sudo cp -r /home/hfnoise/hf_noise/*.html ./<br>
@@ -83,8 +112,18 @@ sudo cpanm RRD::Simple<br>
 cd<br> 
 cd hf_noise<br>
 cd sh<br>
-#run then script to generate rrd db
+#run then script to generate rrd db<br>
 ./create_rrd_db.sh<br>
+#Ok now everything should be ready.<br>
+#we need to enable the scripts in the crontab<br>
+#edit the crontab and  dd the following<br>
+#0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/hfnoise/hf_noise/sh/create_heatmap.sh
+#0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * * /home/hfnoise/hf_noise/sh/run_hf_noise_monitor_and_graph.sh
+#1,6,11,16,21,26,31,36,41,46,51,56 * * * * /home/hfnoise/hf_noise/sh/load_hf_noise_in_rrd.sh
+sudo vi crontab -e
+#save file and now we are done the images and history file should now be autmatekely beeing created. Make sure you ahva along wire antenna connected to your HF rtl dongl<br>
+#***********************************the End ***********************************
+
 
 #rrdtool update hf_noise.rrd ds-name:30Mhz_Power $recordtime:$rrdfields[29]\n";<br>
 echo "Creating rrd database configeration"<br>
