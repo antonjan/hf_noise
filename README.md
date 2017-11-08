@@ -78,9 +78,15 @@ sudo mkdir hf_noise<br>
 sudo mkdir hf_noise/graph<br>
 sudo mkdir hf_noise/images<br>
 cd hf_noise/graph<br>
-sudo cp -r /home/hfnoise/hf_noise/*.php ./<br>
-sudo cp -r /home/hfnoise/hf_noise/*.html ./<br>
-sudo cp -r /home/hfnoise/hf_noise/*.png ./<br>
+sudo cp -r /home/hfnoise/hf_noise/graph/*.php ./<br>
+sudo cp -r /home/hfnoise/hf_noise/graph/*.html ./<br>
+sudo cp -r /home/hfnoise/hf_noise/graph*.png ./<br>
+sudo cp -r /home/hfnoise/hf_noise/image/*.jpg ./<br>
+cd /var/www/html/hf_noise/images<br>
+sudo cp -r /home/hfnoise/hf_noise/image/*.php ./<br>
+sudo cp -r /home/hfnoise/hf_noise/image/*.html ./<br>
+sudo cp -r /home/hfnoise/hf_noise/image/*.jpg ./<br>
+sudo cp -r  /home/hfnoise/hf_noise/image/thumb ./ <br>
 # now test if hfnoise webserver work.<br>
 firefox http://localhost/hf_noise.<br>
 #you should see the index page with no pictures.<br>
