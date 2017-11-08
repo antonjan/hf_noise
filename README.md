@@ -59,10 +59,10 @@ sudo lsusb<br
 #we now need to edit the shel script that monitor the csv file update with your rtl usb port details.<br> 
 #now look for the device with this name "Realtek Semiconductor Corp. RTL2838 DVB-T" in my case it was "Bus 003 Device 004" to be like E.g sudo /home/hfnoise/usbreset/usbreset /dev/bus/usb/003/004<br>
 <br>
-cd
-cd hf_noise
-cd sh
-vi check_if_file_was_updated.sh
+cd<br>
+cd hf_noise<br>
+cd sh<br>
+vi check_if_file_was_updated.sh<br>
 # change the line that looks like this "sudo /home/anton/Downloads/usbreset/usbreset /dev/bus/usb/002/005" with your detail<br>
 #pull the noise monitoring system from github<br>
 git clone https://github.com/antonjan/hf_noise.git<br>
@@ -96,7 +96,7 @@ cd<br>
 # got hf_noise directory and install heatmap by gett from github<br>
 cd hf_noise<br>
 <br>
-git clone https://github.com/keenerd/rtl-sdr-misc.git
+git clone https://github.com/keenerd/rtl-sdr-misc.git<br>
 cd /home/hfnoise/hf_noise/rtl-sdr-misc/heatmap<br>
 chmod 776 *.py<br>
 <br> 
@@ -121,7 +121,18 @@ cd sh<br>
 #run then script to generate rrd db<br>
 ./create_rrd_db.sh<br>
 #Ok now everything should be ready.<br>
-#we need to enable the scripts in the crontab<br>
+#run then script to generate rrd db<br>
+chmod 776 create_rrd_db.sh<br>
+./create_rrd_db.sh<br>
+#Ok now connect your HF dongel to your laptop usb port and connect to an antenna.<br>
+#Ok now everything should be ready.<br>
+#we need to enable the scripts in the crontab (scheduler)<br>
+#run the script to setup the scheduler<br>
+sudo python ./create_crontab.py<br>
+
+#If you want to see how the crontab was setup you can check with this command<br>
+sudo crontab -e<br>
+#Below is the what you should see<br>
 #edit the crontab and  dd the following<br>
 #0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/hfnoise/hf_noise/sh/create_heatmap.sh
 #0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * * /home/hfnoise/hf_noise/sh/run_hf_noise_monitor_and_graph.sh
