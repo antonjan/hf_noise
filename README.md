@@ -63,7 +63,7 @@ cd<br>
 cd hf_noise<br>
 cd sh<br>
 vi check_if_file_was_updated.sh<br>
-# change the line that looks like this "sudo /home/anton/Downloads/usbreset/usbreset /dev/bus/usb/002/005" with your detail<br>
+#change the line that looks like this "sudo /home/anton/Downloads/usbreset/usbreset /dev/bus/usb/002/005" with your detail<br>
 #pull the noise monitoring system from github<br>
 git clone https://github.com/antonjan/hf_noise.git<br>
 #install Apache2 server<br>
@@ -87,13 +87,13 @@ sudo cp -r /home/hfnoise/hf_noise/image/*.php ./<br>
 sudo cp -r /home/hfnoise/hf_noise/image/*.html ./<br>
 sudo cp -r /home/hfnoise/hf_noise/image/*.jpg ./<br>
 sudo cp -r  /home/hfnoise/hf_noise/image/thumb ./ <br>
-# now test if hfnoise webserver work.<br>
+#now test if hfnoise webserver work.<br>
 firefox http://localhost/hf_noise.<br>
 #you should see the index page with no pictures.<br>
 #We now need to install the heatmap application.<br>
 #lets go to home directory and install heatmap<br>
 cd<br> 
-# got hf_noise directory and install heatmap by gett from github<br>
+#got hf_noise directory and install heatmap by gett from github<br>
 cd hf_noise<br>
 <br>
 git clone https://github.com/keenerd/rtl-sdr-misc.git<br>
