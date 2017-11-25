@@ -8,8 +8,11 @@ do
  echo $IMAGE_TYPE
   if [ "x$IMAGE_TYPE" == "ximage" ]; then
 
-    WIDTH=`imageinfo --width "$file"`      # obtaining the image width
-    HEIGHT=`imageinfo --height "$file"`    # obtaining the image height
+ #   WIDTH=`imageinfo --width "$file"`      # obtaining the image width
+ #   HEIGHT=`imageinfo --height "$file"`    # obtaining the image height
+    WIDTH=`identify -format %w "$file"`      # obtaining the image width
+    HEIGHT=`identify -format %H "$file"`    # obtaining the image height
+
 echo with $WIDTH
 echo high $HEIGHT 
 
