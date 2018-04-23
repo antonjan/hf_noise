@@ -127,6 +127,8 @@ chmod 776 create_rrd_db.sh
 #Ok now connect your HF dongel to your laptop usb port and connect to an antenna.
 #Ok now everything should be ready.
 #we need to enable the scripts in the crontab (scheduler)
+# need to install cronlib
+pip install deploycron
 #run the script to setup the scheduler
 sudo python ./create_crontab.py
 
