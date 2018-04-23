@@ -128,7 +128,7 @@ chmod 776 create_rrd_db.sh
 #Ok now everything should be ready.
 #we need to enable the scripts in the crontab (scheduler)
 # need to install cronlib
-sudo :pip install deploycron
+sudo pip install deploycron
 #run the script to setup the scheduler
 sudo python ./create_crontab.py
 #If you want to see how the crontab was setup you can check with this command
