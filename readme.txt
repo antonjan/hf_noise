@@ -111,6 +111,7 @@ sudo chmod +x cpanm
 cd
 sudo cpanm --self-upgrade --sudo
 #sudo apt-get install cpanminus
+#The following compilations can take some time on Raspberry pi
 sudo cpanm Text::Trim
 sudo cpanm Text::CSV
 sudo cpanm Date::Manip
