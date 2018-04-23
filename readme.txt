@@ -155,3 +155,9 @@ The master server will send you an email with instructions how to setup your use
 Password will be send you via SMS
 The following file will have to be edited with your username and password sothat your data can be automatkely send to the master server every hour.
 Details to follow>>>>>>>>>>>>
+
+
+
+#Known Problems Creation of rrd db. (copy master from git)
+rrd db will never grob bigger that 200mb.so dont deend to argive anything here.
+CSV files need to be argived otherwise disk will get full.
