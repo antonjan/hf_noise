@@ -22,12 +22,14 @@ sudo apt install python-setuptools
 sudo easy_install pip
 sudo pip install image
 cd
-#for ubuntu 17.10 do the following.
+#for ubuntu 17.10 do the following. (now replased with imagemagic as in Raspberry Pi section)
 wget http://archive.ubuntu.com/ubuntu/pool/universe/i/imageinfo/imageinfo_0.04-0ubuntu11_amd64.deb
 sudo dpkg -i ./imageinfo_0.04-0ubuntu11_amd64.deb
-# for Ubuntu 16.04 do the following
+# for Ubuntu 16.04 do the following (now replased with imagemagic as in Raspberry Pi section)
  wget http://archive.ubuntu.com/ubuntu/pool/universe/i/imageinfo/imageinfo_0.04-0ubuntu10_amd64.deb
 sudo dpkg -i ./imageinfo_0.04-0ubuntu10_amd64.deb
+# for Raspbery Pi
+sudo apt-get install imagemagick
 cd
 #git clone git://git.osmocom.org/rtl-sdr.git
 #Please make sure you use this repository as the osmond one dont support direct conversion mode
