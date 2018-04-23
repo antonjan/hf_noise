@@ -144,9 +144,14 @@ sudo crontab -e
 #run the command
 ls -lrt /home/hfnoise/hf_noise
 #you should see somthing lyk this
--rw-r--r-- 1 root    root          0 Nov  8 19:06 hf_monitoring_08-11-2017.cvs
--rw-r--r-- 1 root    root          0 Nov  8 19:06 hf_monitoring_graph_08-11-2017.cvs
-You should also see graph images in you browser.
-firefox http://localhost/hf_noise/graph/1Mhz_Power.php
+#-rw-r--r-- 1 root    root          0 Nov  8 19:06 hf_monitoring_08-11-2017.cvs
+#-rw-r--r-- 1 root    root          0 Nov  8 19:06 hf_monitoring_graph_08-11-2017.cvs
+#You should also see graph images in you browser.
+#firefox http://localhost/hf_noise/graph/1Mhz_Power.php
 
-File upload to Master Analytics site will be available when it goes alive.
+#The Master Anaylytics server is now avalibe and you need to register your station at
+http://rfnoise.amsatsa.org.za
+The master server will send you an email with instructions how to setup your username and password.
+Password will be send you via SMS
+The following file will have to be edited with your username and password sothat your data can be automatkely send to the master server every hour.
+Details to follow>>>>>>>>>>>>
