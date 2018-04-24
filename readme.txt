@@ -98,7 +98,7 @@ cd hf_noise
 git clone https://github.com/keenerd/rtl-sdr-misc.git 
 cd /home/hfnoise/hf_noise/rtl-sdr-misc/heatmap
 #give the application execution writes
-chmod 776 *.py
+sudo chmod 776 *.py
 #Now we need to install the perl librareries
 #CPAN, the Comprehensive Perl Archive Network, is the primary source for #publishing and fetching the latest modules
 cd
