@@ -4,7 +4,7 @@
 //$file = $argv[1];
 //}
 
-$files = glob('uploads/hf_monitoring_graph*.{cvs}', GLOB_BRACE);
+$files = glob('../hf_monitoring_graph*.{cvs}', GLOB_BRACE);
 
 foreach($files as $file)
 {    
@@ -50,7 +50,7 @@ $json_string .= ",-26.4,-27.6,".$Call_sign.",".$Pass_Key."\n\r";
 }
 //$json_string .= "\r\n";
 //API Url
-$url = 'http://localhost/hf_noise/upload/jason_upload.php';
+$url = 'http://rfnoise.amsatsa.org.za/hf_noise/upload/jason_upload.php';
 
 //Initiate cURL.
 $ch = curl_init($url);
