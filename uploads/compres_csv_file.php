@@ -10,7 +10,7 @@ foreach($files as $file)
 {    
   //do your work here    
 echo "file = ".$file;
-}
+
 
 
 //################Call Sign and  Key ######################
@@ -69,6 +69,7 @@ $result = curl_exec($ch);
     fclose($handle);
 //echo $json_string;
 echo "posting result " . $result ;
+}
 }
 ?>
 
