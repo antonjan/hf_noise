@@ -17,6 +17,7 @@ Archve loaded files so it dose not get reloaded.<br>
 Run the following commands in the hf_noise directory as user hfnoise.<br>
 mkdir uploads<br>
 cd uploads<br>
+Run the following Command<br>
 wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/compres_csv_file.php<br>
 wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/load_all_files.sh<br>
 Add the following in the crontab<br>
