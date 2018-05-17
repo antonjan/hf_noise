@@ -19,6 +19,11 @@ mkdir uploads<br>
 cd uploads<br>
 Run the following Command<br>
 wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/compres_csv_file.php<br>
+wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/compres_csv_file_arg.php<br>
 wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/load_all_files.sh<br>
+wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/load_todayes_files.sh<br>
 Add the following in the crontab<br>
-50 23 * * * /home/hfnoise/hf_noise/uploads/load_all_files.sh<br>
+50 23 * * * /home/hfnoise/hf_noise/uploads/load_todayes_files.sh<br>
+# If you want to load all files in the created before then run the following command.<br>
+This can take a long time. (depending on how long your history is this can take ouers.)<br>
+/home/hfnoise/hf_noise/uploads/load_all_files.sh<br>
