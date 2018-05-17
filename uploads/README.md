@@ -24,6 +24,6 @@ wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/load_all
 wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/load_todayes_files.sh<br>
 Add the following in the crontab<br>
 50 23 * * * /home/hfnoise/hf_noise/uploads/load_todayes_files.sh<br>
-# If you want to load all files in the created before then run the following command.<br>
-This can take a long time. (depending on how long your history is this can take ouers.)<br>
+# If you want to load all files that was created before then run the following command.<br>
+This can take a long time. (Depending on how long your history is this can take ouers.)<br>
 /home/hfnoise/hf_noise/uploads/load_all_files.sh<br>
