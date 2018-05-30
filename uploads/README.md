@@ -32,7 +32,7 @@ $Call_sign="Your ID";<br>
 $Pass_Key="12345678901";<br>
 //##########################################################<br>
 <br>
-Add the following in the crontab<br>
+Add the following in the crontab. (This will run the daley data 10 to midnight)<br>
 50 23 * * * /home/hfnoise/hf_noise/uploads/load_todayes_files.sh<br>
 # If you want to load all files that was created before then run the following command.<br>
 This can take a long time. (Depending on how long your history is this can take ouers.)<br>
