@@ -16,6 +16,7 @@ Archve loaded files so it dose not get reloaded.<br>
 # Patch for older Raspberry Pi and bootable stick hf_noise monitoring systems.(upload patch)
 Run the following commands in the hf_noise directory as user hfnoise.<br>
 mkdir uploads<br>
+sudo apt-get install php-curl<br>
 cd uploads<br>
 Run the following Command<br>
 wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/compres_csv_file.php<br>
