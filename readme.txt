@@ -16,9 +16,9 @@ sudo apt-get update
 sudo apt-get upgrade
 #We now need to install git to download the noise monitoring application
 sudo apt-get install git
-sudo apt install cmake
+sudo apt-get install cmake
 sudo apt-get install libusb-1.0-0-dev
-sudo apt install python-setuptools
+sudo apt-get install python-setuptools
 sudo easy_install pip
 sudo pip install image
 cd
