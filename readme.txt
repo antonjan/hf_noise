@@ -13,7 +13,7 @@ sudo apt-get update
 #then run this command and try again sudo chmod -R a+rX,u+w /var/cache/app-info/xapian/default
 #now lets upgrade and get some coffie :-)
 
-sudo upgrade
+sudo apt-get upgrade
 #We now need to install git to download the noise monitoring application
 sudo apt-get install git
 sudo apt install cmake
