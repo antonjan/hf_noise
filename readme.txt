@@ -61,9 +61,9 @@ cd
 git clone  https://github.com/antonjan/hf_noise.git
 cd hf_noise
 cd sh
-vi or use your editor and check_if_file_was_updated.sh
-change the line that looks like this "vi /home/anton/Downloads/usbreset/usbreset /dev/bus/usb/"
-002/005" with your detail
+#vi or use your editor and check_if_file_was_updated.sh
+#change the line that looks like this "vi /home/anton/Downloads/usbreset/usbreset /dev/bus/usb/"
+#002/005" with your detail
 #pull the noise monitoring system from github
 git clone https://github.com/antonjan/hf_noise.git
 #install Apache2 server
