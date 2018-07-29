@@ -21,6 +21,7 @@ sudo apt-get install libusb-1.0-0-dev
 sudo apt-get install python-setuptools
 sudo easy_install pip
 sudo pip install image
+sudo apt-get install python-imaging
 cd
 #for ubuntu 17.10 do the following. (now replased with imagemagic as in Raspberry Pi section)
 wget http://archive.ubuntu.com/ubuntu/pool/universe/i/imageinfo/imageinfo_0.04-0ubuntu11_amd64.deb
