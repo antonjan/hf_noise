@@ -13,12 +13,16 @@ echo "file = ".$file;
 
 
 
-//################Call Sign and  Key ######################
+//################ Call Sign ,Key and GPS data ###########################
 //Change yor station ID here.
 $Call_sign="zr6aic";
 //Change your Key here
 $Pass_Key="1234567890-0987654321";
-//##########################################################
+//Change your location Latitude (digital format only get it from google map)
+$GPS_Lat="26.432";
+//Change your location Long (digital format only get it from google map)
+$GPS_Long="-27.612";	
+//##########################################################################
 $row = 1;
 $json_string = "";
 $oldTime ="";
@@ -44,7 +48,8 @@ $json_string .="," .$data[6] ;
 
 }
 if($data[2] == "29000000"){
-$json_string .= ",-26.4,-27.6,".$Call_sign.",".$Pass_Key."\n\r";
+#$json_string .= ",-26.4,-27.6,".$Call_sign.",".$Pass_Key."\n\r";
+$json_string .= ",".$GPS_Lat.",".$GPS_Long.",".$Call_sign.",".$Pass_Key."\n\r";
 }
 
 }
