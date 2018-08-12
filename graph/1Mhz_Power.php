@@ -4,8 +4,8 @@
 </head>
 <body>
 <h2>ZR6AIC HF Noise Montoring</h2>
-This system is using a RTL HF dongle avalible from <a href ="http://www.giga.co.za/ocart/index.php?route=product/product&path=59_63&product_id=178">http://www.giga.co.za</a><br>
-<a href ="http://www.giga.co.za/ocart/index.php?route=product/product&path=59_63&product_id=178"><img src="hf_sdr_1.jpg" alt="100Khz to 1.7Ghz SDR" style="width:304px;height:228px;"></a><br>
+This system is using a RTL HF dongle avalible from <a href ="http://www.giga.co.za/ocart/index.php?route=product/product&path=59_63&product_id=357">http://www.giga.co.za</a><br>
+<a href ="http://www.giga.co.za/ocart/index.php?route=product/product&path=59_63&product_id=357"><img src="hf_sdr_1.jpg" alt="100Khz to 1.7Ghz SDR" style="width:304px;height:228px;"></a><br>
 <div class="menu">
 <?php include 'menu.php';?>
 </div>
