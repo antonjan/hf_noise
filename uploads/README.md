@@ -1,5 +1,8 @@
 Loading cvs files to master server
 ==================================
+# Upload status
+If you get the new Raspberry Pi SD Cards the patche is already Applyed.
+The Bootable Linux USB memory stick is still dont have patch loaded.
 
 This script uploads a cvs with 2 Million rows in 60 seconds.
 
