@@ -5,13 +5,15 @@ This script uploads a cvs with 2 Million rows in 60 seconds.
 
 Instructions :
 
-1. This files will load the CVS files one directory down to the master server. 
-2. The scripts will compress the data and upload it to mater server using username and password.
-3. You need to create a crotab entry as follows.
-50 23 * * * /home/hfnoise/hf_noise/uploads/load_all_files.sh
+1. This files will load the CVS files one directory down to the master server.<br> 
+2. The scripts will compress the data and upload it to mater server using username and password.<br>
+3. You need to create a crotab entry as follows.<br>
+4. IF your country domain is za (Then z = 26 caracter in alphabet and a = 1 (total = 27) then the first digit of the Crontab must be replased with 27<br>
+27 23 * * * /home/hfnoise/hf_noise/uploads/load_all_files.sh<br>
 
 TO DO<br>
 Archve loaded files so it dose not get reloaded.<br>
+Create web admin page for Remote Station.<br>
 
 # Patch for older Raspberry Pi and bootable stick hf_noise monitoring systems.(upload patch)
 Run the following commands in the hf_noise directory as user hfnoise.<br>
