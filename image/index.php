@@ -3,11 +3,12 @@
 /*     $files = glob("NOAA18-MCIR*.png",GLOB_NOSORT);*/
 echo "<html><body>";
 echo "<h1>This is the automated HF Noise monitoring system operated by Anton Janovsky ZR6AIC.</h1>";
-echo "This system is using a RTL HF dongle available from <a href =\"http://www.giga.co.za/ocart/index.php?route=product/product&path=59_63&product_id=178\">Giga Technology</a><br>
-<a href =\"http://www.giga.co.za/ocart/index.php?route=product/product&path=59_63&product_id=178\"><img src=\"hf_sdr_1.jpg\" alt=\"100Khz to 1.7Ghz SDR\" style=\"width:304px;height:228px;\"></a><br>";
+echo "This system is using a RTL HF dongle available from <a href =\"http://www.giga.co.za/ocart/index.php?route=product/product&product_id=357\" target=\"_blank\">Giga Technology</a><br>
+<a href =\"http://www.giga.co.za/ocart/index.php?route=product/product&product_id=357\" target=\"_blank\"><img src=\"../graph/hf_sdr_1.jpg\" alt=\"100Khz to 1.7Ghz SDR\" style=\"width:304px;height:228px;\"></a><br>";
 echo "<b>Click on Image below to enlarge the image and then again to zoom to maximum size, The scrowl baars can then be used to move the image</b><br>";
+echo "Goto <a href =\"/hf_noise/graph/1Mhz_Power.php\">Graph Menu</a><br>";
 echo "This system is taking a 10s snapshot at a 10Khz bandwith every 2 Minutes (10Khz per X and 2 minute per Y pixel)<br>";
-echo '0 - 30Mhz Kiwi HF sdr recever is <a href="http://zr6aic.giga.co.za:8073">avalible here</a><br>';
+echo '0 - 30Mhz Kiwi HF sdr recever is <a href="http://zr6aic.giga.co.za:8073" target="_blank">avalible here</a><br>';
 $fileS = "file.csv";
 $date = date('d-m-Y');
 $fileD = "hf_noise_$date.png";

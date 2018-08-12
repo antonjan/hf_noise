@@ -13,21 +13,24 @@ sudo apt-get update
 #then run this command and try again sudo chmod -R a+rX,u+w /var/cache/app-info/xapian/default
 #now lets upgrade and get some coffie :-)
 
-sudo upgrade
+sudo apt-get upgrade
 #We now need to install git to download the noise monitoring application
 sudo apt-get install git
-sudo apt install cmake
+sudo apt-get install cmake
 sudo apt-get install libusb-1.0-0-dev
-sudo apt install python-setuptools
+sudo apt-get install python-setuptools
 sudo easy_install pip
 sudo pip install image
+sudo apt-get install python-imaging
 cd
-#for ubuntu 17.10 do the following.
+#for ubuntu 17.10 do the following. (now replased with imagemagic as in Raspberry Pi section)
 wget http://archive.ubuntu.com/ubuntu/pool/universe/i/imageinfo/imageinfo_0.04-0ubuntu11_amd64.deb
 sudo dpkg -i ./imageinfo_0.04-0ubuntu11_amd64.deb
-# for Ubuntu 16.04 do the following
+# for Ubuntu 16.04 do the following (now replased with imagemagic as in Raspberry Pi section)
  wget http://archive.ubuntu.com/ubuntu/pool/universe/i/imageinfo/imageinfo_0.04-0ubuntu10_amd64.deb
 sudo dpkg -i ./imageinfo_0.04-0ubuntu10_amd64.deb
+# for Raspbery Pi
+sudo apt-get install imagemagick
 cd
 #git clone git://git.osmocom.org/rtl-sdr.git
 #Please make sure you use this repository as the osmond one dont support direct conversion mode
@@ -59,9 +62,9 @@ cd
 git clone  https://github.com/antonjan/hf_noise.git
 cd hf_noise
 cd sh
-vi or use your editor and check_if_file_was_updated.sh
-change the line that looks like this "vi /home/anton/Downloads/usbreset/usbreset /dev/bus/usb/"
-002/005" with your detail
+#vi or use your editor and check_if_file_was_updated.sh
+#change the line that looks like this "vi /home/anton/Downloads/usbreset/usbreset /dev/bus/usb/"
+#002/005" with your detail
 #pull the noise monitoring system from github
 git clone https://github.com/antonjan/hf_noise.git
 #install Apache2 server
@@ -96,7 +99,7 @@ cd hf_noise
 git clone https://github.com/keenerd/rtl-sdr-misc.git 
 cd /home/hfnoise/hf_noise/rtl-sdr-misc/heatmap
 #give the application execution writes
-chmod 776 *.py
+sudo chmod 776 *.py
 #Now we need to install the perl librareries
 #CPAN, the Comprehensive Perl Archive Network, is the primary source for #publishing and fetching the latest modules
 cd
@@ -109,6 +112,7 @@ sudo chmod +x cpanm
 cd
 sudo cpanm --self-upgrade --sudo
 #sudo apt-get install cpanminus
+#The following compilations can take some time on Raspberry pi
 sudo cpanm Text::Trim
 sudo cpanm Text::CSV
 sudo cpanm Date::Manip
@@ -124,9 +128,10 @@ chmod 776 create_rrd_db.sh
 #Ok now connect your HF dongel to your laptop usb port and connect to an antenna.
 #Ok now everything should be ready.
 #we need to enable the scripts in the crontab (scheduler)
+# need to install cronlib
+sudo pip install deploycron
 #run the script to setup the scheduler
 sudo python ./create_crontab.py
-
 #If you want to see how the crontab was setup you can check with this command
 sudo crontab -e
 #Below is the what you should see
@@ -140,9 +145,20 @@ sudo crontab -e
 #run the command
 ls -lrt /home/hfnoise/hf_noise
 #you should see somthing lyk this
--rw-r--r-- 1 root    root          0 Nov  8 19:06 hf_monitoring_08-11-2017.cvs
--rw-r--r-- 1 root    root          0 Nov  8 19:06 hf_monitoring_graph_08-11-2017.cvs
-You should also see graph images in you browser.
-firefox http://localhost/hf_noise/graph/1Mhz_Power.php
+#-rw-r--r-- 1 root    root          0 Nov  8 19:06 hf_monitoring_08-11-2017.cvs
+#-rw-r--r-- 1 root    root          0 Nov  8 19:06 hf_monitoring_graph_08-11-2017.cvs
+#You should also see graph images in you browser.
+#firefox http://localhost/hf_noise/graph/1Mhz_Power.php
 
-File upload to Master Analytics site will be available when it goes alive.
+#The Master Anaylytics server is now avalibe and you need to register your station at
+http://rfnoise.amsatsa.org.za
+The master server will send you an email with instructions how to setup your username and password.
+Password will be send you via SMS
+The following file will have to be edited with your username and password sothat your data can be automatkely send to the master server every hour.
+Details to follow>>>>>>>>>>>>
+
+
+
+#Known Problems Creation of rrd db. (copy master from git)
+rrd db will never grob bigger that 200mb.so dont deend to argive anything here.
+CSV files need to be argived otherwise disk will get full.
