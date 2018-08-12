@@ -12,5 +12,18 @@ $ini_array = parse_ini_file("station_config.ini", true);
 //print_r($ini_array);
 
 ?>
+  To Do
+  Form to admin remote station
+  callsign
+  Key
+  Lat
+  Long
+  Bandwith
+  Channels
+  Remote URL
+  Local Image
+  Local Sysadmin details
+  Local Sysadmin contact URL
+ 
 </body>
 </html>
