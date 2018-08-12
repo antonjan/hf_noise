@@ -9,3 +9,5 @@ then follow the patch details here <a href="https://github.com/antonjan/hf_noise
 # Pre Configured SD and Bootable memeory Stick.
 If you perchace the Raspberry SD card it it is compleet inculding Patch.<br>
 If you perchace the USB memery stick it still dont have patche and need to be applyes
+# Master Rf Noise monitoring system.
+Link to mater noise monitoring system. <a href="http://rfnoise.amsatsa.org.za/">http://rfnoise.amsatsa.org.za/</a><br>
