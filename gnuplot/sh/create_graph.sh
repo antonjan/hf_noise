@@ -1,1 +1,0 @@
-gnuplot> load ../zerror.dem
