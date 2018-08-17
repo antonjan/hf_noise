@@ -10,6 +10,16 @@ $files = glob('../hf_monitoring_graph*.{cvs}', GLOB_BRACE);
 {    
   //do your work here    
 echo "file = ".$file;
+//################Parse ini file ########################################
+// Parse without sections
+$ini_array = parse_ini_file("../admen/station_config.ini");
+print_r($ini_array);
+//$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
+//echo "Peter is " . $age['Peter'] . " years old.";
+echo "Callsign " . $ini_array['call_sign'];
+echo "Pass_Key " . $ini_array['Pass_Key'];
+echo "GPS_Lat " . $ini_array['GPS_Lat'];
+echo "GPS_Long " . $ini_array['GPS_Laong'];
 
 
 

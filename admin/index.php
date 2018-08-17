@@ -1,5 +1,11 @@
 <html>
 <body>
+<head>
+<link href="/style.css" media="screen" rel="stylesheet" type="text/css" />
+</head>
+<?php 
+include "menu.php";
+?>
 <h1>Station details</h1>
 <?php
 
@@ -12,18 +18,18 @@ $ini_array = parse_ini_file("station_config.ini", true);
 //print_r($ini_array);
 
 ?>
-  To Do
-  Form to admin remote station
-  callsign
-  Key
-  Lat
-  Long
-  Bandwith
-  Channels
-  Remote URL
-  Local Image
-  Local Sysadmin details
-  Local Sysadmin contact URL
+<b>  To Do</b><br>
+  Form to admin remote station<br>
+  callsign<br>
+  Key<br>
+  Lat<br>
+  Long<br>
+  Bandwith<br>
+  Channels<br>
+  Remote URL<br>
+  Local Image<br>
+  Local Sysadmin details<br>
+  Local Sysadmin contact URL<br>
  
 </body>
 </html>
