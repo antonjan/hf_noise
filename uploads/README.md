@@ -3,7 +3,6 @@ Loading cvs files to master server
 # Upload status
 If you get the new Raspberry Pi SD Cards the patche is already Applyed.
 The Bootable Linux USB memory stick is still dont have patch loaded.
->>>>>>> 11431b990f208ae1a590d73ad156c8e214c94b4a
 
 This script uploads a cvs with 2 Million rows in 60 seconds.
 
@@ -33,6 +32,7 @@ wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/compres_
 wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/compres_csv_file_arg.php<br>
 wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/load_all_files.sh<br>
 wget https://raw.githubusercontent.com/antonjan/hf_noise/master/uploads/load_todayes_files.sh<br>
+You aslo need to download the admin folder and all its files if you have one of the first 4 hf_nose systems.<br>
 Then edit your cridensials username and password in the following files.<br>
 You will need to edit the following section in the file that was downloaded compres_csv_file.php and compres_csv_file_arg.php<br>
 Chnage the "Your ID" to your call sign and "Pass_Key" to your SMS details <br>
