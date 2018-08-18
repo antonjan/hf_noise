@@ -12,23 +12,27 @@ $files = glob('../hf_monitoring_graph*.{cvs}', GLOB_BRACE);
 echo "file = ".$file;
 //#################### reading ini filr #################################
 // Parse with sections
-$ini_array = parse_ini_file("station_config.ini", true);
+$ini_array = parse_ini_file("/var/www/html/hf_noise/admin/station_config.ini", true);
 //print_r($ini_array);
 echo "Call_sign" . $ini_array['Call_sign'];
 echo "Pass_Key=" . $ini_array['Pass_Key'];
 echo "GPS_Lat=" . $ini_array['GPS_Lat'];
 echo "GPS_Long=" . $ini_array['GPS_Long'];
+echo "Minute=" . $ini_array['Minute'];
+echo "Hour=" . $ini_array['Hour']; //Houre for upload
+echo "Bandwith=" . $ini_array['Bandwith']; //Bandwith of samples 1M
+echo "Antenna_Switch=" . $ini_array['Antenna_Switch']; //Antenna switch on (High low passfiter enable
 
 
 //################ Call Sign ,Key and GPS data ###########################
 //Change yor station ID here.
-$Call_sign="zr6aic";
+$Call_sign=$ini_array['Call_sign']; //"zr6aic";
 //Change your Key here
-$Pass_Key="1234567890-0987654321";
+$Pass_Key=$ini_array['Pass_Key']; //"1234567890-0987654321";
 //Change your location Latitude (digital format only get it from google map)
-$GPS_Lat="26.432";
+$GPS_Lat=$ini_array['GPS_Lat']; //"26.432";
 //Change your location Long (digital format only get it from google map)
-$GPS_Long="-27.612";	
+$GPS_Long=$ini_array['GPS_Lat']; //"-27.612";	
 //##########################################################################
 $row = 1;
 $json_string = "";
