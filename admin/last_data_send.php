@@ -1,12 +1,4 @@
-<?php
-echo "<html>";
-echo "<head>";
-echo "<title>Edit Remote Station</title>";
-echo "</head>";
-echo "<body>";
-?>
-<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
-<body>
+<html><head><title>Edit Remote Station</title></head><body><link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 <div class='navigation'>
     <div class="main-container full-width">
         <div class="site-width">
@@ -25,16 +17,9 @@ echo "<body>";
     </div> <!-- main-container -->
 </div>
  <div class="intro-box">
+<h3>Here is the last date the data was uploaded to master server</h3>
 <?php
-if ($file = fopen("station_config.ini", "r")) {
-    while(!feof($file)) {
-        $line = fgets($file);
-	# do same stuff with the $line
-	echo $line ."<br>";
-    }
-    fclose($file);
-}
-echo "</div>";
-echo "</body>";
-echo "</html>";
+
 ?>
+</body>
+<html>

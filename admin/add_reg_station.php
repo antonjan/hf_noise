@@ -6,6 +6,7 @@ $Station_Call_sign  = $_POST['Station_Call_sign'];
 $Remote_station_coordinates_lat  = $_POST['Remote_station_coordinates_lat'];
 $Remote_station_coordinates_long  = $_POST['Remote_station_coordinates_long'];
 $Remote_station_login_Key = $_POST['Remote_Station_Key']; 
+$Remote_Filter_Enable = $_POST['Remote_Filter_Enable'];
 //************************************************ code *************************************************
 //
 $file = fopen("station_config.ini","w");
@@ -19,11 +20,11 @@ echo fwrite($file,"GPS_Long = ".$Remote_station_coordinates_long."\n");
 echo fwrite($file,"Minute = 27\n");
 echo fwrite($file,"Hour = 23 ;Houre for upload\n");
 echo fwrite($file,"Bandwith = 1000 ;bandwith in Khz\n");
-echo fwrite($file,"Antenna_Switch = on ;Antenna Switch\n");
+echo fwrite($file,"Antenna_Switch = ".$Remote_Filter_Enable."\n"); //on ;Antenna Switch\n");
 
 fclose($file);
 
-echo "<br>Thank You For Registering your Station<br>";
+echo "Thank You For Registering your Station<br>";
 echo "You station should now submit your daily data to the master server at about midnight 0:0 central africa time (GMT +2)";
 echo "</body>";
 echo "</html>";

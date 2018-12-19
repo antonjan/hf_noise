@@ -1,11 +1,4 @@
-<?php
-echo "<html>";
-echo "<head>";
-echo "<title>Edit Remote Station</title>";
-echo "</head>";
-echo "<body>";
-?>
-<link href="style.css" media="screen" rel="stylesheet" type="text/css" />
+<html><link href="style.css" media="screen" rel="stylesheet" type="text/css" />
 <body>
 <div class='navigation'>
     <div class="main-container full-width">
@@ -20,21 +13,14 @@ echo "<body>";
                 <a href="/hf_noise/about_us.php">About Us</a>
                 <a href="http://rfnoise.amsatsa.org.za/contact_us.php">Contact Us</a>
             </div>
-
         </div> <!-- site-width -->
     </div> <!-- main-container -->
 </div>
- <div class="intro-box">
+<div class="intro-box">
 <?php
-if ($file = fopen("station_config.ini", "r")) {
-    while(!feof($file)) {
-        $line = fgets($file);
-	# do same stuff with the $line
-	echo $line ."<br>";
-    }
-    fclose($file);
-}
-echo "</div>";
-echo "</body>";
-echo "</html>";
+$output = shell_exec("./myscript.sh");
+echo "Data has been send with the following result <br>".$output ;
 ?>
+</div>
+</body>
+</html>
