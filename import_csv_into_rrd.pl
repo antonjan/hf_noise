@@ -210,7 +210,7 @@ if (trim($fields[2]) == 1000000) {
 #    print "rrdtool update hf_noise.rrd ds-name:30Mhz_Power $recordtime:$rrdfields[29]\n";
     print "rrdtool update hf_noise.rrd $recordtime:$rrdfields[0]:$rrdfields[1]:$rrdfields[2]:$rrdfields[3]:$rrdfields[4]:$rrdfields[5]:$rrdfields[6]:$rrdfields[7]:$rrdfields[8]:$rrdfields[9]:$rrdfields[10]:$rrdfields[11]:$rrdfields[12]:$rrdfields[13]:$rrdfields[14]:$rrdfields[15]:$rrdfields[16]:$rrdfields[17]:$rrdfields[18]:$rrdfields[19]:$rrdfields[20]:$rrdfields[21]:$rrdfields[22]:$rrdfields[23]:$rrdfields[24]:$rrdfields[25]:$rrdfields[26]:$rrdfields[27]:$rrdfields[28]\n";
 
-system("rrdtool update /home/anton/hf_noise/hf_noise.rrd $recordtime:$rrdfields[0]:$rrdfields[1]:$rrdfields[2]:$rrdfields[3]:$rrdfields[4]:$rrdfields[5]:$rrdfields[6]:$rrdfields[7]:$rrdfields[8]:$rrdfields[9]:$rrdfields[10]:$rrdfields[11]:$rrdfields[12]:$rrdfields[13]:$rrdfields[14]:$rrdfields[15]:$rrdfields[16]:$rrdfields[17]:$rrdfields[18]:$rrdfields[19]:$rrdfields[20]:$rrdfields[21]:$rrdfields[22]:$rrdfields[23]:$rrdfields[24]:$rrdfields[25]:$rrdfields[26]:$rrdfields[27]:$rrdfields[28]:0\n");
+system("rrdtool update /home/rfnoise/hf_noise/hf_noise.rrd $recordtime:$rrdfields[0]:$rrdfields[1]:$rrdfields[2]:$rrdfields[3]:$rrdfields[4]:$rrdfields[5]:$rrdfields[6]:$rrdfields[7]:$rrdfields[8]:$rrdfields[9]:$rrdfields[10]:$rrdfields[11]:$rrdfields[12]:$rrdfields[13]:$rrdfields[14]:$rrdfields[15]:$rrdfields[16]:$rrdfields[17]:$rrdfields[18]:$rrdfields[19]:$rrdfields[20]:$rrdfields[21]:$rrdfields[22]:$rrdfields[23]:$rrdfields[24]:$rrdfields[25]:$rrdfields[26]:$rrdfields[27]:$rrdfields[28]:0\n");
 
     print "********************************************************************************\n";
 

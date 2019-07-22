@@ -40,7 +40,7 @@
  # calculate the average of the array
  my $tot_mem_ave = $tot_mem_sum/($count);
  # create the graph
- RRDs::graph ("/home/anton/hf_noise/graph/mem_$count.png",   
+ RRDs::graph ("/home/rfnoise/hf_noise/graph/mem_$count.png",   
              "--title= RF noise",    
              "--vertical-label=Memory Consumption (MB)", 
              "--start=$start_time",      

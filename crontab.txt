@@ -1,5 +1,5 @@
 #This is what needs to be plased in Crontab 
 
-0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/anton/sh/create_heatmap.sh
-0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * * /home/anton/sh/run_hf_noise_monitor_and_graph.sh
-1,6,11,16,21,26,31,36,41,46,51,56 * * * * /home/anton/sh/load_hf_noise_in_rrd.sh
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/rfnoise/sh/create_heatmap.sh
+0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * * /home/rfnoise/sh/run_hf_noise_monitor_and_graph.sh
+1,6,11,16,21,26,31,36,41,46,51,56 * * * * /home/rfnoise/sh/load_hf_noise_in_rrd.sh

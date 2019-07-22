@@ -35,7 +35,7 @@ echo "Historical images<br>";
 /*echo '<a href="/hf_noise/images/june2017.php">'.'June 2017</a>'."<br>";*/
 
 echo "<table>";
-$dir = "/home/anton/wxsat/images";
+$dir = "/home/rfnoise/wxsat/images";
 chdir($dir);
 array_multisort(array_map('filemtime', ($files = glob("*.{png,jpg}", GLOB_BRACE))), SORT_DESC, $files);
 foreach($files as $filename)

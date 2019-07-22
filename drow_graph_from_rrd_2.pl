@@ -7,7 +7,7 @@
 # use RRDs;
 $rrdfile = "hf_noise.rrd";
 my %rtn = $rrd->graph($rrdfile,
-         destination => "/home/anton/graph",
+         destination => "/home/rfnoise/graph",
          basename => "graph_basename",
          timestamp => "both", # graph, rrd, both or none
          periods => [ qw(week month) ], # omit to generate all graphs
