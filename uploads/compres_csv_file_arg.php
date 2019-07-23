@@ -25,13 +25,17 @@ echo "GPS_Long " . $ini_array['GPS_Laong'];
 
 //################ Call Sign ,Key and GPS data ###########################
 //Change yor station ID here.
-$Call_sign="zr6aic";
+//$Call_sign="zr6aic";
+$Call_sign = $ini_array['call_sign'];	
 //Change your Key here
-$Pass_Key="1234567890-0987654321";
+//$Pass_Key="1234567890-0987654321";
+$Pass_Key = $ini_array['Pass_Key'];	
 //Change your location Latitude (digital format only get it from google map)
-$GPS_Lat="26.432";
+//$GPS_Lat="26.432";
+$GPS_Lat = $ini_array['GPS_Lat'];	
 //Change your location Long (digital format only get it from google map)
-$GPS_Long="-27.612";	
+//$GPS_Long="-27.612";
+$GPS_Long = $ini_array['GPS_Lat'];	
 //##########################################################################
 $row = 1;
 $json_string = "";
