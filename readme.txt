@@ -20,6 +20,7 @@ sudo apt-get install cmake
 sudo apt-get install libusb-1.0-0-dev
 sudo apt-get install python-setuptools
 sudo easy_install pip
+sudo python -m pip install --upgrade pip setuptools
 sudo pip install image
 sudo apt-get install python-imaging
 cd
