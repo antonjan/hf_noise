@@ -5,7 +5,7 @@ Master server url is rfnoise.amsatsa.org.za<br>
 # Project Status.
 This repository is now compleet.<br>
 <b>All files is submitted and I will follow the readme.txt file for instelation instructions</b><br>
-then follow the patch details here <a href="https://github.com/antonjan/hf_noise/blob/master/uploads/README.md">https://github.com/antonjan/hf_noise/blob/master/uploads/README.md</a><br>
+then follow the patch details here <a href="https://github.com/antonjan/hf_noise/blob/master/readme.txt">https://github.com/antonjan/hf_noise/blob/master/readme.txt</a><br>
 # Pre Configured SD and Bootable memeory Stick.
 If you perchace the Raspberry SD card it it is compleet inculding Patch.<br>
 If you perchace the USB memery stick it still dont have patche and need to be applyes
