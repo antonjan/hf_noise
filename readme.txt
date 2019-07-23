@@ -21,7 +21,7 @@ sudo apt-get install libusb-1.0-0-dev
 sudo apt-get install python-setuptools
 sudo easy_install pip
 sudo python -m pip install --upgrade pip setuptools
-sudo pip install image
+#sudo pip install image
 sudo apt-get install python-imaging
 cd
 #for ubuntu 17.10 do the following. (now replased with imagemagic as in Raspberry Pi section)
@@ -136,8 +136,9 @@ sudo python ./create_crontab.py
 #If you want to see how the crontab was setup you can check with this command
 sudo crontab -e
 #Below is the what you should see
-0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/hfnoise/hf_noise/sh/create_heatmap.sh 0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * * /home/hfnoise/hf_noise/sh/run_hf_noise_monitor_and_graph.sh 1,6,11,16,21,26,31,36,41,46,51,56 * * * * /home/hfnoise/hf_noise
-
+0,5,10,15,20,25,30,35,40,45,50,55 * * * * /home/hfnoise/hf_noise/sh/create_heatmap.sh 0,2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36,38,40,42,44,46,48,50,52,54,56,58 * * * * /home/hfnoise/hf_noise/sh/run_hf_noise_monitor_and_graph.sh 
+1,6,11,16,21,26,31,36,41,46,51,56 * * * * /home/hfnoise/sh/load_hf_noise_in_rrd.sh
+50 23 * * * /home/hfnoise/hf_noise/uploads/load_todayes_files.sh
 #save file and now and we are now done.
 #The images and history file should now be automatically being created every 5 minutes.
 #Make sure you have along wire antenna connected to your HF rtl dongle to hf noise recordings.
