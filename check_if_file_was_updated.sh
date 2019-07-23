@@ -11,7 +11,7 @@ else
 echo 'Is not the same'
 usb_file=$(sudo lsof -w |grep rtl_power |grep /dev/bus |  awk -F" " '{print $9}')
 echo $usb_file
-sudo /home/hfnoise/Downloads/usbreset/usbreset $usb_file
+sudo /home/hfnoise/usbreset/usbreset $usb_file
 lsusb
 #sudo lsof | grep rtl_power | grep /dev/bus
 #/dev/bus/usb/002/010``
