@@ -113,13 +113,20 @@ sudo chmod +x cpanm
 cd
 sudo cpanm --self-upgrade --sudo
 #sudo apt-get install cpanminus
-#The following compilations can take some time on Raspberry pi
-sudo cpanm Text::Trim
-sudo cpanm Text::CSV
-sudo cpanm Date::Manip
-sudo cpanm Text::Trim
+#The following compilations can take some time on Raspberry pi ( had some probles with this prosess and  has now updated on a better metherd to install)
+perl -MCPAN -e'shell'
+then run the following commands in the perl shell
+install Text::Trim
+install Text::CSV
+install Date::Manip
+install RRD::Simple
+#old way
+#sudo cpanm Text::Trim
+####sudo cpanm Text::CSV
+###sudo cpanm Date::Manip
+#sudo cpanm Text::Trim
 # mite be only trim
-sudo cpanm RRD::Simple
+#sudo cpanm RRD::Simple
 cd
 cd hf_noise
 cd sh
