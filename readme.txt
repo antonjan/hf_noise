@@ -120,6 +120,7 @@ install Text::Trim
 install Text::CSV
 install Date::Manip
 install RRD::Simple
+Pres [Ctrn-c] to exit
 #old way
 #sudo cpanm Text::Trim
 ####sudo cpanm Text::CSV
