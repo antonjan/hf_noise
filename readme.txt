@@ -114,7 +114,7 @@ cd
 sudo cpanm --self-upgrade --sudo
 #sudo apt-get install cpanminus
 #The following compilations can take some time on Raspberry pi ( had some probles with this prosess and  has now updated on a better metherd to install)
-perl -MCPAN -e'shell'
+sudo perl -MCPAN -e'shell'
 then run the following commands in the perl shell
 install Text::Trim
 install Text::CSV
