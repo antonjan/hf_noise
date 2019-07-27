@@ -22,8 +22,8 @@ echo "<td>";
   /*echo "<a>".substr($filename, 0, -4)."</a><br>";*/
   /*echo "<a>".$filename."</a><br>";*/
     echo 'Live Image<br>';
-    echo '<a href="http://zr6aic.giga.co.za/hf_noise/images/'.$filename.'">'.$filename.'</a>'."<br>";
-    echo '<a href="http://zr6aic.giga.co.za/hf_noise/images/'.$filename .'"> <img src="thumb/thumb_'.$filename .'" alt="Random image" height="150" width="200" ></a>'."<br><br>";
+    echo '<a href="/hf_noise/images/'.$filename.'">'.$filename.'</a>'."<br>";
+    echo '<a href="/hf_noise/images/'.$filename .'"> <img src="thumb/thumb_'.$filename .'" alt="Random image" height="150" width="200" ></a>'."<br><br>";
 echo "</td>";
 echo "</tr>";
 echo "</table>";
@@ -43,8 +43,8 @@ echo '<tr bgcolor="#f0f0f0">';
 echo "<td>";
   /*echo "<a>".substr($filename, 0, -4)."</a><br>";*/
   /*echo "<a>".$filename."</a><br>";*/
-    echo '<a href="http://zr6aic.giga.co.za/hf_noise/images/'.$filename.'">'.$filename.'</a>'."<br>";
-    echo '<a href="http://zr6aic.giga.co.za/hf_noise/images/'.$filename .'"> <img src="thumb/thumb_'.$filename .'" alt="image" height="150" width="200" ></a>'."<br><br>";
+    echo '<a href="/hf_noise/images/'.$filename.'">'.$filename.'</a>'."<br>";
+    echo '<a href="/hf_noise/images/'.$filename .'"> <img src="thumb/thumb_'.$filename .'" alt="image" height="150" width="200" ></a>'."<br><br>";
 echo "</td>";
 /*echo "<td>";
 echo '<a href="http://zr6aic.giga.co.za/hf_noise/images/rotate.php/?filename='.$filename.'" >Rotate 180 Deg</a>';
