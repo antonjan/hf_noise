@@ -83,6 +83,7 @@ cd hf_noise/graph
 sudo cp -r /home/hfnoise/hf_noise/graph/*.php ./
 sudo cp -r /home/hfnoise/hf_noise/graph/*.html ./
 sudo cp -r /home/hfnoise/hf_noise/graph/*.png ./
+sudo cp -r /home/hfnoise/hf_noise/graph/*.jpg ./
 cd /var/www/html/hf_noise/images
 sudo cp -r /home/hfnoise/hf_noise/image/*.php ./
 sudo cp -r /home/hfnoise/hf_noise/image/*.html ./
