@@ -22,7 +22,7 @@ sudo apt-get install python-setuptools
 sudo easy_install pip (not requerd in raspberry pi 4)
 sudo python -m pip install --upgrade pip setuptools
 #sudo pip install image
-sudo apt-get install python-imaging
+sudo apt-get install python-imaging (in Pi 4 you need to install python-pil instead)
 cd
 #for ubuntu 17.10 do the following. (now replased with imagemagic as in Raspberry Pi section)
 wget http://archive.ubuntu.com/ubuntu/pool/universe/i/imageinfo/imageinfo_0.04-0ubuntu11_amd64.deb
