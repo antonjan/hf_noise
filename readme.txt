@@ -84,11 +84,14 @@ sudo cp -r /home/hfnoise/hf_noise/graph/*.php ./
 sudo cp -r /home/hfnoise/hf_noise/graph/*.html ./
 sudo cp -r /home/hfnoise/hf_noise/graph/*.png ./
 sudo cp -r /home/hfnoise/hf_noise/graph/*.jpg ./
+sudo cp -r /home/hfnoise/hf_noise/graph/*.txt ./
 cd /var/www/html/hf_noise/images
 sudo cp -r /home/hfnoise/hf_noise/image/*.php ./
 sudo cp -r /home/hfnoise/hf_noise/image/*.html ./
 sudo cp -r /home/hfnoise/hf_noise/image/*.jpg ./
 sudo cp -r  /home/hfnoise/hf_noise/image/thumb ./
+cd /var/www/html
+sudo chown -R www-data:www-data ./
 #now test if hfnoise webserver work.
 firefox http://localhost/hf_noise
 #you should see the index page with no pictures.
