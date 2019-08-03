@@ -119,6 +119,7 @@ sudo chmod 776 *.py
 #CPAN, the Comprehensive Perl Archive Network, is the primary source for #publishing and fetching the latest modules
 cd
 sudo apt-get install perl build-essential curl
+sudo apt-get install php-curl
 sudo apt-get install rrdtool
 sudo apt-get install librrds-perl
 cd /usr/local/bin
