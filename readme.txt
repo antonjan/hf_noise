@@ -49,6 +49,7 @@ sudo vi /etc/modprobe.d/no-rtl.conf
 #add the following blacklist dvb_usb_rtl28xxu
 blacklist rtl2832
 blacklist rtl2830
+blacklist dvb_usb_rtl28xxu
 #reboot 
 #we now need to install an application that will allow us to reset the USB port where the rtl dongle is installed if it locks up for some reason (this has append when there is lightning in the aria.So what i do is motor if the csv file get updated if not I reset the usb port with this utility.
 cd
