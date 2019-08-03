@@ -148,6 +148,7 @@ chmod 776 create_rrd_db.sh
 sudo pip install deploycron
 #run the script to setup the scheduler
 sudo python ./create_crontab.py
+sudo chmod 776 -r /home/hfnoise/hf_noise/sh
 #If you want to see how the crontab was setup you can check with this command
 sudo crontab -e
 #Below is the what you should see
