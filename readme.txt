@@ -183,6 +183,15 @@ Password will be send you via SMS
 The following file will have to be edited with your username and password sothat your data can be automatkely send to the master server every hour.
 Details to follow>>>>>>>>>>>>
 
+#If you are using my input filter,power injector and isolation board on a raspberry Pi 4 you will need to do the following.
+cd /tmp
+wget https://project-downloads.drogon.net/wiringpi-latest.deb
+sudo dpkg -i wiringpi-latest.debd using Raspberry Pi 4 you will need to do the following.
+Then there is two scripts in sh directory to switch to high pass and low pass filter.
+cd
+cd hf_noise/sh
+./set_antenna_filter_HP.sh
+./set_antenna_filter_LP.sh
 
 
 #Known Problems Creation of rrd db. (copy master from git)
