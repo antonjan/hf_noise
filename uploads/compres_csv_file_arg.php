@@ -19,7 +19,7 @@ print_r($ini_array);
 echo "Callsign " . $ini_array['call_sign'];
 echo "Pass_Key " . $ini_array['Pass_Key'];
 echo "GPS_Lat " . $ini_array['GPS_Lat'];
-echo "GPS_Long " . $ini_array['GPS_Laong'];
+echo "GPS_Long " . $ini_array['GPS_Long'];
 
 
 
@@ -35,7 +35,7 @@ $Pass_Key = $ini_array['Pass_Key'];
 $GPS_Lat = $ini_array['GPS_Lat'];	
 //Change your location Long (digital format only get it from google map)
 //$GPS_Long="-27.612";
-$GPS_Long = $ini_array['GPS_Lat'];	
+$GPS_Long = $ini_array['GPS_Long'];	
 //##########################################################################
 $row = 1;
 $json_string = "";
