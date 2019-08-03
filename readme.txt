@@ -19,6 +19,7 @@ sudo apt-get install git
 sudo apt-get install cmake
 sudo apt-get install libusb-1.0-0-dev
 sudo apt-get install python-setuptools
+sudo apt-get install rrdtool
 sudo easy_install pip (not requerd in raspberry pi 4)
 sudo python -m pip install --upgrade pip setuptools
 #sudo pip install image
