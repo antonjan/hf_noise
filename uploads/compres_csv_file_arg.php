@@ -12,7 +12,7 @@ $files = glob('../hf_monitoring_graph*.{cvs}', GLOB_BRACE);
 echo "file = ".$file;
 //################Parse ini file ########################################
 // Parse without sections
-$ini_array = parse_ini_file("../admen/station_config.ini");
+$ini_array = parse_ini_file("/var/www/html/hf_noise/admin/station_config.ini");
 print_r($ini_array);
 //$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 //echo "Peter is " . $age['Peter'] . " years old.";
