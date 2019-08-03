@@ -38,6 +38,7 @@ cd
 #Please make sure you use this repository as the osmond one dont support direct conversion mode
 git clone https://github.com/keenerd/rtl-sdr.git
 cd rtl-sdr/
+cp rtl-sdr.rules /etc/udev/rules.d/
 mkdir build
 cd build
 cmake ../
