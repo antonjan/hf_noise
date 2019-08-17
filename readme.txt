@@ -80,6 +80,9 @@ git clone https://github.com/antonjan/hf_noise.git
 sudo apt-get install apache2
 sudo systemctl start apache2.service
 sudo systemctl enable apache2.service
+sudo mkdir /etc/htpasswd
+sudo /usr/bin/htpasswd -c /etc/htpasswd/.htpasswd Admin
+#Enter the admin password
 sudo apt install php7.1 libapache2-mod-php7.1  (in Pi only run sudo apt install php)
 sudo a2enmod php7.1
 sudo systemctl restart apache2
