@@ -70,6 +70,7 @@ sudo chmod 776 *.sh
 cd 
 cd hf_nose/upload
 sudo chmod 776 *.sh
+sudo chown hfnoise:www-data ./load_todayes_files.sh
 #vi or use your editor and check_if_file_was_updated.sh
 #change the line that looks like this "vi /home/rfnoise/Downloads/usbreset/usbreset /dev/bus/usb/"
 #002/005" with your detail
