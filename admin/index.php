@@ -17,6 +17,7 @@ echo "<body>";
                 <a href="/hf_noise/admin/register_your_station.php">Register Your Station</a>
 		<a href="/hf_noise/admin/send_data_today.php">Send data Now</a>
 		<a href="/hf_noise/admin/last_data_send.php">Upload Log</a>
+		<a href="/hf_noise/admin/delete_old_noise_files.php">Clear Files</a>
                 <a href="/hf_noise/about_us.php">About Us</a>
                 <a href="http://rfnoise.amsatsa.org.za/contact_us.php">Contact Us</a>
             </div>
