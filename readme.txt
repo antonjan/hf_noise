@@ -86,6 +86,19 @@ sudo /usr/bin/htpasswd -c /etc/htpasswd/.htpasswd Admin
 sudo apt install php7.1 libapache2-mod-php7.1  (in Pi only run sudo apt install php)
 sudo a2enmod php7.1
 sudo systemctl restart apache2
+#insert the following before </VirtualHost> tag in /etc/apache2/sites-available/000-default.conf
+               
+                </Directory>
+                <Directory "/var/www/html/hf_noise/admin">
+                AuthType Basic
+                AuthName "Authentication Required"
+                AuthUserFile "/etc/htpasswd/.htpasswd"
+                Require valid-user
+
+                Order allow,deny
+                Allow from all
+                </Directory>
+
 cd /var/www/html
 sudo mkdir hf_noise
 sudo mkdir hf_noise/graph
