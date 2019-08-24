@@ -16,7 +16,7 @@ $ini_array = parse_ini_file("/var/www/html/hf_noise/admin/station_config.ini");
 print_r($ini_array);
 //$age=array("Peter"=>"35","Ben"=>"37","Joe"=>"43");
 //echo "Peter is " . $age['Peter'] . " years old.";
-echo "Callsign " . $ini_array['call_sign'];
+echo "Callsign " . $ini_array['Call_sign'];
 echo "Pass_Key " . $ini_array['Pass_Key'];
 echo "GPS_Lat " . $ini_array['GPS_Lat'];
 echo "GPS_Long " . $ini_array['GPS_Long'];
@@ -26,7 +26,7 @@ echo "GPS_Long " . $ini_array['GPS_Long'];
 //################ Call Sign ,Key and GPS data ###########################
 //Change yor station ID here.
 //$Call_sign="zr6aic";
-$Call_sign = $ini_array['call_sign'];	
+$Call_sign = $ini_array['Call_sign'];	
 //Change your Key here
 //$Pass_Key="1234567890-0987654321";
 $Pass_Key = $ini_array['Pass_Key'];	
