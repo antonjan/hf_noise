@@ -19,7 +19,12 @@
  <div class="intro-box">
 <h3>Here is the last date the data was uploaded to master server</h3>
 <?php
-
+$myfile = fopen("/home/hfnoise/hf_noise/admin/upload.log", "r") or die("Unable to open file!");
+while(!feof($myfile)) {
+  echo fgets($myfile) . "<br>";
+}
+//echo fread($myfile,filesize("webdictionary.txt"));
+fclose($myfile);
 ?>
 </body>
 <html>
