@@ -167,6 +167,7 @@ cd
 cd hf_noise
 cd sh
 #run then script to generate rrd db
+# the rrd file is repository and should be there but the following script can be used on a 64 bit operating system to create the rrd file
 chmod 776 create_rrd_db.sh
 ./create_rrd_db.sh
 #Ok now connect your HF dongel to your laptop usb port and connect to an antenna.
