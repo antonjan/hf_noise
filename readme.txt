@@ -68,7 +68,7 @@ cd hf_noise
 cd sh
 sudo chmod 776 *.sh
 cd 
-cd hf_nose/upload
+cd ./hf_nose/upload
 sudo chmod 776 *.sh
 sudo chown hfnoise:www-data ./load_todayes_files.sh
 #vi or use your editor and check_if_file_was_updated.sh
