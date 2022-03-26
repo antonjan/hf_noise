@@ -117,6 +117,9 @@ sudo cp -r /home/hfnoise/hf_noise/image/*.jpg ./
 sudo cp -r  /home/hfnoise/hf_noise/image/thumb ./
 cd /var/www/html/hf_noise/admin
 sudo cp -r /home/hfnoise/hf_noise/admin ./
+cd /var/www/html/hf_noise
+sudo cp -r /home/hfnoise/hf_noise/*.html ./
+sudo cp -r /home/hfnoise/hf_noise/*.php ./
 cd /var/www/html
 sudo chown -R www-data:www-data ./
 #now test if hfnoise webserver work.
